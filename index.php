@@ -3,6 +3,7 @@ include 'paypal-pdt-functions.php';
 $payment_data = isset($_GET['tx'])
 ? process_pdt($_GET['tx'])
 : FALSE;
+
 $success_url = 'http://www.sanjaybhowmick.com/demo/paypal-pdt/success.php';
 $cancel_url = 'http://www.sanjaybhowmick.com/demo/paypal-pdt/cancel.php';
 ?>
